@@ -1,10 +1,25 @@
 import { Request, Response } from "express";
 
+const create = (req:Request,res:Response)=>{
+    const {name,usename,email,password,avatar,background} = req.body;
 
-const soma =(req:Request,res:Response) =>{
-    const soma =100 +1;
-    res.send({soma:soma})
+    if(!name || !usename || !email || !password || !avatar || !background){
+        res.status(400).send({message:"Erro ao registrar"});
+    }
+     
+    res.status(201).json({
+        message: "usuario criando com sucesso",
+        user:{
+            name,
+            usename,
+            email,
+            avatar,
+            background,
+            
+        },
+        
+    })
 }
 
 
-export {soma}
+export {create}

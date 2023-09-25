@@ -6,7 +6,8 @@ const app = express();
 const PORT:Number = Number(process.env.PORT)
 
 
-app.use(route)
+app.use(express.json());
+app.use('/user',route);
 
 
 app.listen(PORT,()=>console.log(`http://localhost:${PORT}`))
