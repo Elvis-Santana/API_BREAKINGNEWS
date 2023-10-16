@@ -3,7 +3,7 @@ import {connectcDatabase} from './database/db.js'
 
 import userRoute from "./routes/user.route.js";
 import authRoute from "./routes/auth.route.js";
-import newsRoute from "./routes/News.route.js";
+import newsRoute from "./routes/news.route.js";
 
 import "dotenv/config"
 
