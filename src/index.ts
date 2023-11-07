@@ -4,7 +4,7 @@ import {connectcDatabase} from './database/db.js'
 import userRoute from "./routes/user.route.js";
 import authRoute from "./routes/auth.route.js";
 import newsRoute from "./routes/news.route.js";
-
+import swaaggerRoute from './routes/swagger.route.js'
 import "dotenv/config"
 
 const app = express();
@@ -17,6 +17,7 @@ app.use(express.json());
 app.use('/user',userRoute);
 app.use('/auth',authRoute);
 app.use('/news',newsRoute)
+app.use('/doc',swaaggerRoute)
 
 
 app.listen(PORT,()=>console.log(`http://localhost:${PORT}`))
