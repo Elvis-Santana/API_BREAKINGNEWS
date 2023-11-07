@@ -5,6 +5,7 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
+    "preinstall": "npx tsc",
     "start": "node dist/index.js",
     "dev": "nodemon dist/index.js"
   },
