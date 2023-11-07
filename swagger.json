@@ -10,7 +10,7 @@
   },
   "servirs": [
     {
-      "url": "https://localhost:8080",
+      "url": "https://api-breakingnews-w7ge.onrender.com",
       "description": "Local Server"
     }
   ],
