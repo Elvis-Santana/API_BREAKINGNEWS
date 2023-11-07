@@ -4,10 +4,13 @@
   "description": "API for SPA Breaking News",
   "main": "index.js",
   "type": "module",
+  "engines": {
+    "node": "18"
+  },
   "scripts": {
-    "preinstall": "npx tsc",
-    "start": "node dist/index.js",
-    "dev": "nodemon dist/index.js"
+    "dev": "nodemon dist/index.js",
+    "bulid" :"tsc ",
+    "start": "node dist/index.js"
   },
   "keywords": [],
   "author": "",
